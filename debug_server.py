@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.debug = True
 
-ENV_FILE_PATH = '/app/.env'
+ENV_FILE_PATH = '/home/user/app/.env'
 SSH_DIR_PATH = '/root/.ssh'
 ENV_PASSWORD = os.environ.get('ENV_PASSWORD')
 
