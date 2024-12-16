@@ -43,7 +43,7 @@ export ENV_PASSWORD="your_secure_password"
 
 3. Run the server:
 ```bash
-python debug_server.py
+python app.py
 ```
 
 The server will run on port 8081 by default.
@@ -60,13 +60,6 @@ REMEMBER: you will need to use basic auth to access the site.
 - ENV file: `/home/app/.env`
 - SSH authorized_keys: `/home/app/.ssh/authorized_keys`
 
-## Development
-
-To run in debug mode:
-```bash
-export FLASK_DEBUG=1
-python debug_server.py
-```
 
 ## Security Notes
 - Always use HTTPS in production
