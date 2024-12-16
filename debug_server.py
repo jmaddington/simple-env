@@ -6,8 +6,8 @@ app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.debug = True
 
-ENV_FILE_PATH = '/home/user/app/.env'
-SSH_DIR_PATH = '/root/.ssh'
+ENV_FILE_PATH = '/home/user/.env'
+SSH_DIR_PATH = '/home/user/.ssh'
 ENV_PASSWORD = os.environ.get('ENV_PASSWORD')
 
 def check_auth(username, password):
@@ -41,8 +41,8 @@ def index():
         if 'env_content' in request.form:
             
             # Make sure /app exists
-            if not os.path.exists('/app'):
-                os.makedirs('/app')
+            if not os.path.exists('/home/user'):
+                os.makedirs('/home/user')
                 
             try:
                 with open(ENV_FILE_PATH, 'w') as file:

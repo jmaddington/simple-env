@@ -1,6 +1,6 @@
 # Server Configuration Editor
 
-A simple web interface for managing server configuration files, specifically designed for:
+A simple flask-driven web interface for managing server configuration files, specifically designed for:
 - Writing to .env files
 - Adding SSH public keys to authorized_keys
 
@@ -55,8 +55,8 @@ The server will run on port 8081 by default.
 3. Use either the ENV editor or SSH key manager as needed
 
 ## File Locations
-- ENV file: `/app/.env`
-- SSH authorized_keys: `/root/.ssh/authorized_keys`
+- ENV file: `/home/app/.env`
+- SSH authorized_keys: `/home/app/.ssh/authorized_keys`
 
 ## Development
 
