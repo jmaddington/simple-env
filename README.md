@@ -33,7 +33,7 @@ A simple flask-driven web interface for managing server configuration files, spe
 
 1. Install requirements:
 ```bash
-pip install flask
+pip install -r requirements.txt
 ```
 
 2. Set the password environment variable:
@@ -53,6 +53,8 @@ The server will run on port 8081 by default.
 1. Access the web interface at `http://localhost:8081`
 2. Enter the configured password when prompted
 3. Use either the ENV editor or SSH key manager as needed
+
+REMEMBER: you will need to use basic auth to access the site.
 
 ## File Locations
 - ENV file: `/home/app/.env`
