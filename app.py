@@ -7,7 +7,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.debug = True
 
 ENV_FILE_PATH = '/home/user/.env'
-SSH_DIR_PATH = '/home/user/.ssh'
+SSH_DIR_PATH = '/home/user/.ssh/'
 ENV_PASSWORD = os.environ.get('ENV_PASSWORD')
 
 def check_auth(username, password):
